@@ -10,6 +10,7 @@ RUN apt-get update \
          gcc \
          make \
          libpcap-dev \
+         curl \
     && git clone https://github.com/robertdavidgraham/masscan \
     && cd masscan \
     && make -j \
