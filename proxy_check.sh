@@ -10,4 +10,4 @@ while read _ _ _ PORT _ IP; do
     echo BAD: ${PROXY}
     echo "${PROXY}" >> bad_list.txt
   fi) &
-done < <(tail -f scan.txt)
+done < <(tail -f /opt/proxylists.txt)
