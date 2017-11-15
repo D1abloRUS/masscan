@@ -11,6 +11,7 @@ RUN apt-get update \
          make \
          libpcap-dev \
          curl \
+         clang \
     && git clone https://github.com/robertdavidgraham/masscan \
     && cd masscan \
     && make -j \
